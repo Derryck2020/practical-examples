@@ -1,0 +1,36 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+div {
+     background: blue;
+     width: 100px;
+     height: 80px;
+     font-size: 20px;
+     margin: 10px;
+     color: aliceblue;
+     transition: all 2s;
+}
+
+div:hover {
+     transform: translate(10px, 10px);
+}
+
+.ease {
+     transition-timing-function: ease;
+}
+.linear {
+     transition-timing-function: linear;
+}
+.ease-in {
+     transition-timing-function: ease-in;
+}
+.ease-out {
+     transition-timing-function: ease-out;
+}
+.ease-in-out {
+     transition-timing-function: ease-in-out;
+}
+
+

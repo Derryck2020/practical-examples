@@ -1,0 +1,54 @@
+/*
+- reset (margin,padding,box-sizing)
+- body = system fonts and line height
+- .nav = height, background (#222), padding
+- .nav-title = font-size, text-transform, font-weight, color(#fff),letter-spacing
+
+- .nav-center = width, max-width, margin (place in the center)
+
+- .hero = background(linear-gradient, image),min-height(subtract nav height)
+
+- .hero-center (has to be the same width as nav-center) = width, max-width, margin,padding,color (#fff)
+
+- select h1 inside .hero-center = letter-spacing, text-transform, margin-bottom
+
+- select p inside .hero-center = max-width,margin-bottom
+
+- .hero-btn = background, border, padding, text-transform, color(#fff), letter-spacing
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav {
+    height: 4rem;
+    background: #222;
+    padding: 1rem 0;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+
+.nav-center{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: url(./image/energe.jpg) center/cover;
+    min-height: calc(100vh - 4rem);
+
+}
