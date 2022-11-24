@@ -48,7 +48,34 @@ body {
 }
 
 .hero {
-    background: url(./image/energe.jpg) center/cover;
+    background: linear-gradient(to top,rgba(39, 214, 39, 0.5), rgba(230, 230, 37, 0.2)), url(./image/energe.jpg) center/cover no-repeat fixed;
     min-height: calc(100vh - 4rem);
+}
 
+.hero-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.hero-center h1 {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero-center p {
+    max-width: 1170px;
+    margin-bottom: 10px;
+}
+
+.hero-btn {
+    background: grey;
+    border: 1px solid rgb(235, 73, 73);
+    padding: 0.3em;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.1em;
 }
