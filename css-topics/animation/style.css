@@ -12,7 +12,7 @@ div {
 
 .transition:hover {
     background: yellow;
-    transition: translateX(100px)
+    transition: translateX(50px)
 }
 
 .animation {
