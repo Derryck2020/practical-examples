@@ -9,7 +9,7 @@ div {
 .animation {
     background: blue;
     animation: move 5s 2; /* function duration count */
-    animation-fill-mode: backwards; /* or forward */
+    animation-fill-mode: backwards; /* or forwards */
 }
 
 @keyframes move {
