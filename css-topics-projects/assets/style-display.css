@@ -1,0 +1,59 @@
+/*
+- setup reset
+- select body, add system fonts, background (#f1f5f9), line height
+
+- select section, add padding, background (#fff)
+
+- select "section-title", add text-align, text-transform
+
+- select .title-underline, add height, width, background, place in the center, add margin in the bottom
+
+- select section center, add width (90vw), max-width (1170px), place in the center
+
+#### Questions
+
+- Why section title in a separate div? 
+    Ans: It helps to group similar content for easier identification
+
+- Why 90vw and 1170px?
+    Ans: 90vw becos it makes the content better on any screen size
+    Ans: max-width makes the content stay within its width which makes it look better on any screen size
+
+    - The purpose of section-center: Is to focus on the content within it.
+- Examples
+*/
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #f1f5f9;
+    line-height: 1.5;
+}
+
+.section {
+    padding: 2rem;
+    background: #fff;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.title-underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: rgb(151, 206, 243);
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    border: 1px solid firebrick;
+}
