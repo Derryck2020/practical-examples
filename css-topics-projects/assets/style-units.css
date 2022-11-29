@@ -1,0 +1,39 @@
+/*
+- set margin 0 to all elements "\*{margin:0}
+- for navbar - set height and add background color
+- for logo - set font-size and add color
+- for hero - set color, background, and min-height with calc
+    (subtract navbar height from 100% of the screen height)
+- for span - add color and font-size
+- for button - background and color
+*/
+
+* {
+    margin: 0;
+}
+
+.navbar {
+    height: 5rem;
+    background: aqua;
+}
+
+.logo {
+    font-size: 32px;
+    color: rgb(211, 131, 11);
+}
+
+.hero {
+    color: rgb(121, 122, 122);
+    background: rgb(10, 10, 9);
+    min-height: calc(100vh - 5rem);
+}
+
+.hero span {
+    color: rgb(211, 131, 11);
+    font-size: 25px;
+}
+
+.hero-btn {
+    background: rgb(211, 131, 11);
+    color: rgb(6, 72, 253);
+}
