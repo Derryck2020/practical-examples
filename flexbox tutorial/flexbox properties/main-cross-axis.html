@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <link rel="stylesheet" href="/flexbox tutorial/setup/style.css">
+    <!-- Main axis / Cross axis-->
+    <style>
+        .container {
+            height: 300px;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /*When you're working with Flex Box, please keep in mind, which is your flex direction, whenever it is the column,
+        then your main axis changes. Thus the properties you used for the row is changed for the column. You have to check now in the column, 
+        which is the main axis and cross axis.
+        This helps avoid any kind of confusion which would happen if you're trying to place something horizontal in the center and is not working.
+        You are actually, in fact, placing it vertically.*/
+        .container-1 {
+            height: 800px;
+            border: 5px solid blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- parent = flex-container -->
+    <div class="container">
+        <!-- children = flex-items -->
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+    </div>
+
+    <div class="container-1">
+        <!-- children = flex-items -->
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+    </div>
+</body>
+</html>
