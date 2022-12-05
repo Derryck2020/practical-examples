@@ -1,0 +1,122 @@
+<!--
+- create folder (10-cards)
+- create index.html, general structure
+- give it a title (cards project)
+- create css file (main.css)
+- link to css file in html (head element)
+
+#### HTML
+
+- section with class "blogs"
+  - div with class "section-title"
+    - h2 with text "latest blogs"
+  - div with class "blogs-center"
+    - article with class "blog"
+      - img with class "blog-img"
+      - div with class "blog-content"
+        - span with text and any icon
+        - h3
+        - p (lorem15)
+        - a (href="#") "read more"
+    - repeat
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Mall</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="/mini-shopping-site/assets/fontawesome-free-6.2.1-web/css/all.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/mini-shopping-site/assets/main.css" />
+</head>
+<body>
+    <!-- blog section -->
+    <section class="blogs">
+        <!-- section title -->
+        <div class="section-title">
+            <h2 class="latest-blogs">Show Room</h2>
+        </div>
+        <!-- section title end-->
+        <!-- blogs center-->
+        <div class="blogs-center">
+            <!-- first blog -->
+            <article class="blog">
+                <img src="/mini-shopping-site/assets/images/kitchen.jpg" alt="">
+                <!-- blog content-->
+                <div class="blog-content">
+                    <span>Kitchen <i class="fa-solid fa-kitchen-set"></i></span>
+                    <h3>Wide range of Kitchen Gadgets</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi illum, laudantium tenetur natus laborum?</p>
+                    <a href="#">Read More...</a>
+                </div>
+                <!-- blog content end-->
+            </article>
+            <!-- first blog end -->
+
+            <!-- second blog -->
+            <article class="blog">
+                <img src="/mini-shopping-site/assets/images/audi.jpg" alt="">
+                <!-- blog content-->
+                <div class="blog-content">
+                    <span>Automobile <i class="fa-solid fa-car"></i></span>
+                    <h3>Fleet of Cars</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi illum, laudantium tenetur natus laborum?</p>
+                    <a href="#">Read More...</a>
+                </div>
+                <!-- blog content end-->
+            </article>
+            <!-- second blog end -->
+
+            <!-- third blog -->
+            <article class="blog">
+                <img src="/mini-shopping-site/assets/images/laptopp.jpg" alt="">
+                <!-- blog content-->
+                <div class="blog-content">
+                    <span>Laptop <i class="fa-solid fa-laptop"></i></span>
+                    <h3>Computer Accessories</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi illum, laudantium tenetur natus laborum?</p>
+                    <a href="#">Read More...</a>
+                </div>
+                <!-- blog content end-->
+            </article>
+            <!-- third blog end -->
+
+            <!-- fourth blog -->
+            <article class="blog">
+                <img src="/mini-shopping-site/assets/images/energe.jpg" alt="">
+                <!-- blog content-->
+                <div class="blog-content">
+                    <span>Drinks <i class="fa-solid fa-martini-glass-citrus"></i></span>
+                    <h3>Different Varieties of Drinks</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi illum, laudantium tenetur natus laborum?</p>
+                    <a href="#">Read More...</a>
+                </div>
+                <!-- blog content end-->
+            </article>
+            <!-- fourth blog end -->
+
+            <!-- fifth blog -->
+            <article class="blog">
+                <img src="/mini-shopping-site/assets/images/library.jpg" alt="">
+                <!-- blog content-->
+                <div class="blog-content">
+                    <span>Library <i class="fa-solid fa-book"></i></span>
+                    <h3>Welcome to our E-library</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi illum, laudantium tenetur natus laborum?</p>
+                    <a href="#">Read More...</a>
+                </div>
+                <!-- blog content end-->
+            </article>
+            <!-- fifth blog end -->
+        </div>
+        <!-- blogs center end-->
+    </section>
+    <!-- blog section end-->
+</body>
+</html>
