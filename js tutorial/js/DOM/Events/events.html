@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            background: red;
+            color: white;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+        .blue {
+            background: blue;
+            color: white;
+            text-transform: capitalize;
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+        .green {
+            background: rgb(21, 255, 0);
+            color: white;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+        }
+        .btn {
+            background: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+        }
+        a {
+            display: inline-block;
+            margin-top: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>events in javascript</h2>
+    <h1>mouse actions</h1>
+    <button class="btn">click me</button>
+    <p onclick="this.classList.add('red')"> the old style</p>
+    <input type="text" id="name">
+    <br>
+    <br>
+    <br>
+    <button class="btn1">click to change</button>
+    <h2 class="example">working with event object</h2>
+    <button class="btn2">first button</button>
+    <br>
+    <br>
+    <button class="btn2">
+        second <strong>button <strong>more nested</strong></strong>
+    </button>
+    <br>
+    <br>
+    <button class="btn2">third button</button>
+    <br>
+    <br>
+
+    <div class="container">
+        <ul class="list-items">
+        <li class="item"><a href="#" class="link">link</a></li>
+        <li class="item"><a href="#" class="link">link</a></li>
+        <li class="item"><a href="#" class="link">link</a></li>
+        </ul>
+    </div>
+
+
+</body>
+<script src="./events.js"></script>
+</html>
