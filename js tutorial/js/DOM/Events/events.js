@@ -83,7 +83,7 @@ function someFunc(e) {
     e.preventDefault(); //This will prevent the default scrolling up to the page when the link is clicked.
 }
 
-link.addEventListener('click', someFunc)
+//link.addEventListener('click', someFunc)
 
 
 //currentTarget --- always refers to the element to which the event handler has been attached to
@@ -119,10 +119,25 @@ function showBubbling(e) {
   // }
 }
 function stopPropogation(e) {
-    e.stopPropagation();
+    e.stopPropagation(); //prevents registering up to the chain 
 }
 
 list.addEventListener('click', showBubbling, { capture: true });
 container.addEventListener('click', showBubbling, { capture: true });
 document.addEventListener('click', showBubbling, { capture: true });
 window.addEventListener('click', showBubbling, { capture: true });
+
+
+// submit event listener
+// prevent default
+// how to get a value
+
+const form = document.getElementById('form');
+const name1 = document.getElementById('name1');
+const password = document.getElementById('password');
+form.addEventListener('submit', function(e) {
+    e.preventDefault(); //prevents the default behaviour of the form when the inputs are submitted
+    console.log('form submitted');
+    console.log(name1.value);
+    console.log(password.value);
+});
