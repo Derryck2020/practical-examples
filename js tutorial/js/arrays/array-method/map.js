@@ -103,12 +103,22 @@ let realNam = avenge.map(getName);
 
 //  In this example, we will access the arr parameter to look in and check if the current item is the last item in the list. If it is not, 
 //  we access the next item and subtract it from the current item. If it is the last, we just return it.
-const oldArray = [33, 20, 10, 5];
+const oldArray = [33, 20, -4, 5, -11];
 const newArray = oldArray.map((currentVal, index, array) => {
     let nextItem = index + 1 < array.length ? array[index + 1] : 0;
     return currentVal - nextItem;
 });
 
-
 console.log(newArray);
+
+
+function myArray(arr){
+    let newArr = []
+    arr.map((ele) => {
+        newArr.push(ele**2);
+    })
+    return newArr;
+}
+
+console.log(myArray([2, 3, 4, 5]))
 

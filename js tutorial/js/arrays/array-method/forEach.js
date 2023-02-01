@@ -34,7 +34,7 @@ const people = [
 //Passing an anonymous callback function directly into the forEach
 //function(currentElement){} ====> anonymous function
 people.forEach(function (params) {
-    console.log(params.position.toUpperCase())
+    //console.log(params.position.toUpperCase())
 })
 
 
@@ -51,7 +51,7 @@ function squaredArray(arr){
     return squaredArr;
 }
 
-console.log(squaredArray([4, 2, 3, 5])); 
+//console.log(squaredArray([4, 2, 3, 5])); 
 
 
 //2.  Create a function that takes in an array of numbers. Multiply each number together and alert the product. 
@@ -59,7 +59,7 @@ function multiplyNumsInArr(arry){
     let product = 1;
     arry.forEach(function(ele){
         product *= ele;
-    console.log(product)
+    //console.log(product)
     })
 }
 
@@ -98,14 +98,15 @@ staffsDetails.forEach(({name}) =>{
 
 //HOW TO USE THE INDEX ARGUMENT
 //We could also get the index of each array item by just making use of the unbuilt index argument this way:
-staffsDetails.forEach((staffsDetails, index) =>{
-    let sentence = `index ${index}: I am ${staffsDetails.name} staff of Ashes Royal.`;
+staffsDetails.forEach((staffDetail, index) =>{
+    let sentence = `index ${index}: I am ${staffDetail.name} staff of Ashes Royal.`;
     //console.log(sentence)
 })
 
+
 //HOW TO USE THE ARRAY ARGUMENT
 staffsDetails.forEach((staffsDetails, index, array) =>{
-    console.log(array)
+    //console.log(array)
 }) //This would output the entire array 4 times since we have 4 items and the iteration runs 4 times.
 
 //Adding all the staff member's salaries together
@@ -212,3 +213,13 @@ studentsScores.forEach((stundentScore) => {
 */
 
 //NB: Async?Await does not work with the forEach() method but works with the for loop method
+
+
+
+    let squaredArr = [];
+
+    arr.forEach(el => {
+    squaredArr.push(el**2)
+    })
+
+console.log(squaredArray([4, 2, 3, 5]));
