@@ -1,0 +1,6 @@
+[
+  { "name": "john", "team": "IT", "age": 24 },
+  { "name": "peter", "team": "finance", "age": 13 },
+  { "name": "anna", "team": "HR", "age": 19 },
+  { "name": "susan", "team": "transport", "age": 33 }
+]
