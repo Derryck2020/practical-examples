@@ -9,28 +9,31 @@ In the example below, the childNodes property is used on the <body> element node
 */
 
 //select the <body> element node with the DOM method querySelector
-const body = document.querySelector('body') 
+const body = document.querySelector("body");
 //select the children nodes with the <body> element node with the DOM property node.childNodes
-const childrenNodes = body.childNodes
+const childrenNodes = body.childNodes;
 //console log the children nodes
-console.log(childrenNodes)//NodeList(5) [text, div, text, a, text]
+console.log(childrenNodes); //NodeList(10) [text, div, text, a, text, comment, text, script, text, script]
 
 /*
 Relationships Between Nodes in the DOM Tree
-The nodes in the DOM tree have a hierarchical relationship with each other in the DOM tree. They are defined by their position relative to each other in the DOM tree.
+The nodes in the DOM tree have a hierarchical relationship with each other in the DOM tree. 
+They are defined by their position relative to each other in the DOM tree.
 
 These are the node positions present in the DOM tree illustration above:
 
-Root node: The root node is always at the apex of the DOM tree. In an HTML document, the root node is always the <html> element.
+Root node: The root node is always at the apex of the DOM tree. In an HTML document, 
+the root node is always the <html> element.
 
 Child node: A child node is a node embedded inside another node. In the illustration given above, the <head> and 
 the <body> elements are the children of the <html> element.
 
-Descendant node: Any node positioned below another node in the hierarchical order is the descendant of the nodes positioned above it. 
-For example, although the  <h1> element is not the direct child of the <body> element, it is a descendant of the <body> and  root <html> elements.
+Descendant node: Any node positioned below another node in the hierarchical order is the descendant of the 
+nodes positioned above it. For example, although the  <h1> element is not the direct child of the <body> element, 
+it is a descendant of the <body> and  root <html> elements.
 
-Parent node: Any node which has another node inside it is a parent node. For example, the <body> element is the parent of the <div> and <a> elements 
-in the above example. Note that only element type nodes can be a parent node.
+Parent node: Any node which has another node inside it is a parent node. For example, the <body> element 
+is the parent to the <div> and <a> elements in the above example. Note that only element type nodes can be a parent node.
 
 Sibling nodes: Nodes that are on the same level in hierarchical order in the DOM tree are sibling nodes. 
 For example, <div> and <a> elements in the above example are siblings.
